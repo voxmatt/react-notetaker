@@ -23873,8 +23873,8 @@
 				base.removeBinding(this.ref);
 			}
 		}, {
-			key: 'compoentWillReceiveProps',
-			value: function compoentWillReceiveProps() {
+			key: 'componentWillReceiveProps',
+			value: function componentWillReceiveProps() {
 				base.removeBinding(this.ref);
 				this.init();
 			}
@@ -23951,7 +23951,6 @@
 	var helpers = {
 		getGithubInfo: function getGithubInfo(username) {
 			return _axios2['default'].all([getRepos(username), getUserInfo(username)]).then(function (results) {
-				debugger;
 				return {
 					repos: results[0].data,
 					bio: results[1].data

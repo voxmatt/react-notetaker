@@ -11,7 +11,6 @@ function getUserInfo(username) {
 var helpers = {
 	getGithubInfo(username) {
 		return axios.all([getRepos(username), getUserInfo(username)]).then((results) => {
-			debugger;
 			return {
 				repos: results[0].data,
 				bio: results[1].data

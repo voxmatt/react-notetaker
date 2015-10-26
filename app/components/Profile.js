@@ -47,7 +47,7 @@ class Profile extends React.Component {
 		base.removeBinding(this.ref);
 	}
 
-	compoentWillReceiveProps() {
+	componentWillReceiveProps() {
 		base.removeBinding(this.ref);
 		this.init();
 	}
